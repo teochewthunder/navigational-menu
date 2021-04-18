@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Navigational Bar Demo</title>
+	</head>
+
+	<style>
+		body
+		{
+			font-size: 14px;
+			font-family: arial;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		nav
+		{
+			width: 100%;
+			height: 45px;
+			background-color: rgba(255, 150, 0, 1);
+			padding: 0.5em;
+			overflow: visible;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		nav ul li
+		{
+			display: inline-block;
+			width: 200px;
+			float: left;
+		}
+
+		nav ul li a
+		{
+			color: rgba(255, 255, 255, 1);
+			font-weight: bold;
+			font-family: verdana;
+			overflow: visible;
+			text-decoration: none;		
+		}
+
+		nav ul li a:hover
+		{
+			text-decoration: none;
+		}
+
+		nav ul li ul li
+		{
+			display: none;
+		}
+
+		nav ul li:hover ul
+		{
+			display: inline-block;
+			width: 200px;
+			float: left;
+			margin-left: -3em;
+			margin-top: 1.5em;
+		}
+
+		nav ul li:hover ul li
+		{
+			display: inline-block;
+			padding: 1em 0.5em 0.5em 0.5em;
+			width: 100%;
+			height: 30px;
+			float: left;
+			background-color: rgba(255, 150, 0, 1);
+			overflow: hidden;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		}
+
+		nav ul li ul li:hover
+		{
+			background-color: rgba(255, 200, 0, 1);
+			overflow: visible;
+		}
+
+		nav ul li ul li:hover ul
+		{
+			margin-top: -2.5em;
+		}
+
+		nav ul li ul li ul li
+		{
+			display: inline-block;
+			padding: 0.5em;
+			width: 100%;
+			height: 30px;
+			margin-left: 209px;
+		}
+
+		.content
+		{
+			padding: 1em;
+			margin-top: 5em;
+		}
+	</style>
+
+	<body>
+		<nav>
+			<ul>
+				<li><a href="">Menu Level 1 item 1</a></li>
+				<li>
+					<a href="">Menu Level 1 item 2 &#9660;</a>
+					<ul>
+						<li><a href="">Menu Level 2 item 1</a></li>
+						<li><a href="">Menu Level 2 item 2</a></li>
+					</ul>
+				</li>
+				<li><a href="">Menu Level 1 item 3</a></li>
+				<li>
+					<a href="">Menu Level 1 item 4 &#9660;</a>
+					<ul>
+						<li><a href="">Menu Level 2 item 1</a></li>
+						<li>
+							<a href="">Menu Level 2 item 2 &#9654;</a>
+							<ul>
+								<li><a href="">Menu Level 3 item 1</a></li>
+								<li><a href="">Menu Level 3 item 2</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">Menu Level 2 item 3 &#9654;</a>
+							<ul>
+								<li><a href="">Menu Level 3 item 1</a></li>
+								<li><a href="">Menu Level 3 item 2</a></li>
+							</ul>
+						</li>
+						<li><a href="">Menu Level 2 item 4</a></li>
+					</ul>
+				</li>
+				<li><a href="">Menu Level 1 item 5</a></li>
+			</ul>	
+		</nav>
+
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus massa, aliquet non justo non, convallis tincidunt purus. Integer dolor purus, facilisis dapibus metus id, blandit dignissim lorem. Pellentesque ut lobortis nisi. Cras viverra nisi sed ligula vulputate varius. Vestibulum mi nisi, placerat sit amet mollis id, consectetur malesuada sem. Etiam vitae tellus in libero sodales convallis. Aliquam erat volutpat. Sed vel libero in orci pharetra cursus. Nulla sit amet congue lectus. Pellentesque suscipit turpis non urna accumsan pulvinar. Pellentesque luctus dui cursus lorem pharetra, a hendrerit massa congue. Donec lacinia iaculis enim in placerat. Sed dictum scelerisque massa ac sagittis. Pellentesque mattis mi non felis porta tempus. Vivamus nec ex semper, euismod ligula nec, mattis nibh. </p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur erat orci, et elementum augue facilisis et. Nullam ligula lacus, dapibus vitae odio a, mollis tempus enim. Donec ut nunc tristique, semper massa vel, faucibus ipsum. Quisque est eros, varius sed placerat sollicitudin, eleifend in nunc. In auctor nisl sapien, sit amet tincidunt massa mollis sed. Suspendisse potenti. Duis egestas pellentesque velit id bibendum. Vestibulum varius bibendum felis ac fringilla. Donec justo mauris, posuere sit amet risus eu, cursus faucibus leo. Proin a ante sollicitudin, fermentum urna porttitor, ultrices neque.</p>
+
+			<p>Cras massa massa, ultricies quis condimentum eu, accumsan ut est. Donec at maximus eros, vitae vulputate orci. Nam quis neque ac velit molestie volutpat id eu libero. In ullamcorper nisl eu arcu vestibulum, at venenatis libero fermentum. Proin ac sem pellentesque, vestibulum purus non, molestie turpis. In vel eleifend ipsum. In ligula dolor, sollicitudin eu bibendum et, varius a enim. Nulla tincidunt leo in ante semper laoreet. Sed lectus ex, rutrum sed consequat ut, molestie tempor elit. </p>
+
+			<p>Pellentesque mauris ligula, suscipit malesuada risus at, posuere ultrices tellus. Nulla nec eros non ex ullamcorper tincidunt nec sed nulla. Fusce bibendum mi id dolor pretium, ac rhoncus magna viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer lacus sapien, consequat ultricies consectetur ac, viverra a neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi aliquam eget tortor ut elementum. Maecenas commodo lorem mauris.</p>
+
+			<p>Maecenas quis nunc id diam finibus ornare efficitur non orci. Quisque id ultricies risus. Morbi vitae elit pharetra, sollicitudin eros euismod, aliquam est. Ut sit amet libero tempor, auctor nulla vitae, pulvinar justo. Mauris ornare laoreet nisi, sit amet semper nibh accumsan sed. In id justo rhoncus, consectetur enim et, gravida purus. Sed vitae pellentesque urna. Pellentesque pretium, enim non scelerisque consequat, augue odio tempor felis, in laoreet leo massa vel diam. </p>
+		</div>
+	</body>
+</html>
